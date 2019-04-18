@@ -72,48 +72,29 @@ namespace Ejercicio5EstrucDeCtrl
 
              Console.ReadKey();  */
 
-             decimal[] numero = new decimal[20];
-            decimal suma;
-            decimal promedio;
+            decimal[] numero = new decimal[4];
+            decimal suma = 0;            
 
-            for (var i = 0; i < 20; i++)
-             {
+            Console.WriteLine("Ingrese un número");
+            for (var i = 0; i < numero.Length; i++) {
 
-                 decimal valor;
-                 string ingreso;
+                decimal valor;
+                string ingreso;
 
-                 bool ok = false;
-
-                while (!ok)
-
-                {
-                    Console.WriteLine("Ingrese un número (Ingreso máximo: 20)");
+                bool ok = false;
+                while (!ok) {
 
                     ingreso = Console.ReadLine();
                     ok = decimal.TryParse(ingreso, out valor);
-
                     numero[i] = valor;
-
-
-                    suma = 0;
-
-                    suma = suma + numero[i];
-                    promedio = suma / 20;
-
-                    {Console.WriteLine("Promedio de numeros ingresados:" +promedio); };
-
+                    
                 }
+                suma = suma + numero[i];
             }
-            Console.ReadKey(); 
+            decimal promedio = suma / numero.Length;            
 
-            
-            
-
-
-
-
-
-
+            Console.WriteLine($"Promedio de numeros ingresados: {promedio} ");
+            Console.ReadKey();
 
 
         }
