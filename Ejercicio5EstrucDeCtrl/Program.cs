@@ -150,8 +150,7 @@ namespace Ejercicio5EstrucDeCtrl
             foreach (decimal nro in numero)
                 Console.WriteLine(nro);
 
-            Console.ReadKey();
-
+            Console.ReadKey(); 
 
       
             
