@@ -148,7 +148,7 @@ namespace Ejercicio5EstrucDeCtrl
 
             Console.WriteLine("La lista ordenadad de forma descendente");
             foreach (decimal nro in numero)
-                Console.WriteLine(nro);
+                Console.WriteLine(nro); 
 
             Console.ReadKey(); 
 
