@@ -99,7 +99,7 @@ namespace Ejercicio5EstrucDeCtrl
             List<decimal> numero = new List<decimal>();
             decimal suma = 0;
             bool ingresoX = false;
-            
+
             string ingreso;
 
             decimal valor;
@@ -114,28 +114,28 @@ namespace Ejercicio5EstrucDeCtrl
 
                 while (!ok)
                 {
-                    if (ingreso == "x" || ingreso == "X"   || string.IsNullOrWhiteSpace(ingreso)) 
+                    if (ingreso == "x" || ingreso == "X" || string.IsNullOrWhiteSpace(ingreso))
                         ingresoX = true;
                     break;
                 };
 
-                
+
                 ok = decimal.TryParse(ingreso, out valor);
 
-                if(ingresoX == false)
-                    
+                if (ingresoX == false)
 
-                numero.Add(valor);
-            
+
+                    numero.Add(valor);
+
             };
             foreach (decimal nro in numero)
             { suma += nro;
-              promedio = suma / (numero.Count);
+                promedio = suma / (numero.Count);
             };
 
             Console.WriteLine($"[{suma}] / [{(numero.Count)}] = {promedio}");
 
-            Console.WriteLine("MAX:"+numero.Max());
+            Console.WriteLine("MAX:" + numero.Max());
             Console.WriteLine("MIN:" + numero.Min());
             Console.WriteLine("El primero ingresado fue:" + numero.First());
             Console.WriteLine("El úlitmo ingresado fue:" + numero.Last());
@@ -148,28 +148,64 @@ namespace Ejercicio5EstrucDeCtrl
 
             Console.WriteLine("La lista ordenadad de forma descendente");
             foreach (decimal nro in numero)
-                Console.WriteLine(nro); 
+                Console.WriteLine(nro);
 
             Console.ReadKey(); 
 
-      
-            
-     
-        
 
-            
-
-
-
-        
-      
-            
-
-       
 
 
         }
 
+
+
+
+
+
+
+
+
+
     }
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+    
+    
+
 
